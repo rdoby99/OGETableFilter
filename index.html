@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>OGE Table Filter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Selectors -->
+    <div id='selectors'>
+        <div class="selectorContainer">
+        <label for="region">Region</label>
+        <select name="region" class="filters" id="regionSelect">
+          <option value="any" selected>- Any -</option>
+          <option value="africa">Africa</option>
+          <option value="asia">Asia</option>
+          <option value="oceania">Australia/Oceania</option>
+          <option value="europe">Europe</option>
+          <option value="northAmerica">North America</option>
+          <option value="southAmerica">South America</option>
+        </select>
+        </div>
+
+        <div class="selectorContainer">
+        <label for="need">Need/Merit</label>
+        <select name="need" class="filters" id="needSelect">
+          <option value="any" selected>- Any -</option>
+          <option value="need">Need</option>
+          <option value="merit">Merit</option>
+        </select>
+        </div>
+
+        <div class="selectorContainer">
+        <label for="source">Funding Source</label>
+        <select name="source" class="filters" id="sourceSelect">
+          <option value="any" selected>- Any -</option>
+          <option value="oge">OGE</option>
+          <option value="uga">UGA Department</option>
+          <option value="external">External</option>
+        </select>
+        </div>
+
+        <div class="selectorContainer">
+        <label for="level">Level</label>
+        <select name="level" class="filters" id="levelSelect">
+          <option value="any" selected>- Any -</option>
+          <option value="undergrad">Undergraduate</option>
+          <option value="grad">Graduate</option>
+        </select>
+        </div>
+
+        <div class="selectorContainer">
+        <label for="amount">Amount</label>
+        <select name="amount" class="filters" id="amountSelect">
+          <option value="any" selected>- Any -</option>
+          <option value="1000">~1000</option>
+          <option value="1001">1000~</option>
+        </select>
+        </div>
+    </div>
+
+
+      <!-- Table -->
+    <div class="table-responsive">
+        <div class="table-responsive">
+        <table class="table" style="width:100%;">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Summary</th>
+                    <th scope="col">Eligibility</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Region</th>
+                    <th scope="col">More Info</th>
+                    <th scope="col">Tags</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UGA Foundation Incentive Scholarship for Study Abroad: UGA at Oxford</td>
+                    <td>For students participating in the UGA at Oxford program</td>
+                    <td>An applicant must be a&nbsp;non-transient, degree-seeking major at the University of Georgia&nbsp;and&nbsp;completed at least one semester&nbsp;as an undergraduate or graduate student at UGA prior to taking part in a study abroad program.<br />
+                    An applicant must be in good standing at the time of submission of this application as well as during any semester s/he is to receive scholarship funds. Preference will be given to applicants with&nbsp;a&nbsp;2.5 cumulative grade point average or higher.<br />
+                    An applicant&nbsp;must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.<br />
+                    An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA at Oxford study abroad program in the StudyAway Portal.</td>
+                    <td>Varies</td>
+                    <td>Europe</td>
+                    <td>Learn more</td>
+                    <td>europe,merit,uga,both,varies</td>
+                </tr>
+                <tr>
+                    <td>UGA Foundation Incentive Scholarship for Study Abroad: UGA Cortona</td>
+                    <td>For students participating in the UGA Cortona program</td>
+                    <td>An applicant must be a&nbsp;non-transient, degree-seeking major at the University of Georgia&nbsp;and&nbsp;completed at least one semester&nbsp;as an undergraduate or graduate student at UGA prior to taking part in a study abroad program.<br />
+                    An applicant must be in good standing at the time of submission of this application as well as during any semester s/he is to receive scholarship funds. Preference will be given to applicants with&nbsp;a&nbsp;2.5 cumulative grade point average or higher.<br />
+                    An applicant&nbsp;must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.<br />
+                    An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA Cortona study abroad program in the StudyAway Portal.</td>
+                    <td>Varies</td>
+                    <td>Europe</td>
+                    <td>Learn More</td>
+                    <td>europe,both,uga,both,varies</td>
+                </tr>
+                <tr>
+                    <td>Office of Global Engagement General Scholarship</td>
+                    <td>A scholarship presented by OGE.</td>
+                    <td>-</td>
+                    <td>Up to $3,000</td>
+                    <td>Global</td>
+                    <td>Learn more</td>
+                    <td>global,need,oge,both,3000</td>
+                </tr>
+                <tr>
+                    <td>Asia-Georgia Internship Connection (Freeman Asia Grant)</td>
+                    <td>The UGA Office of Global Engagement was awarded $200,000 from the Freeman Foundation to provide grants for professional experience in Southeast Asia. The&nbsp;objective of this grant is to fund international internships where the students will receive academic credit for the internship.</td>
+                    <td>Currently enrolled UGA undergraduate or graduate students are eligible. Internships/Volunteer opportunities MUST last for a minimum of 4 weeks and MUST earn academic credit for the internship. There is no maximum limit on internship/volunteer duration. Internships/volunteer program MUST be conducted in Southeast Asia. You MUST be a U.S. citizen or permanent resident.</td>
+                    <td>Up to $5,000</td>
+                    <td>Asia</td>
+                    <td>Learn more</td>
+                    <td>asia,both,oge,both,5000</td>
+                </tr>
+                <tr>
+                    <td>UGA at Oxford Endowed Scholarships Fund</td>
+                    <td>For students pursuing the UGA at Oxford program.</td>
+                    <td>An applicant must be a non-transient, degree-seeking major at the University of Georgia and have completed at least one semester as an undergraduate or graduate student at UGA prior to taking part in a study abroad program.<br />
+                    An applicant must be in good standing at the time of submission of this application as well as during any semester s/he is to receive scholarship funds. Preference will be given to applicants with a 3.0 cumulative grade point average or higher.<br />
+                    An applicant must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.</td>
+                    <td>Varies</td>
+                    <td>Europe</td>
+                    <td>Learn more</td>
+                    <td>europe,both,uga,both,varies</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
