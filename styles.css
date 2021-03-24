@@ -16,8 +16,14 @@ select {
   display: inline-block;
 }
 
-#selectors {
+.selectorsResetWrap {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#selectors {
+  display: inline-flex;
   align-items: center;
   margin-bottom: 1rem;
   justify-content: center;
@@ -30,25 +36,40 @@ select {
     margin: 0 1rem;
 }
 
+#resetButton {
+  border: none;
+  background-color: #BA0C2F;
+  padding: 1rem;
+  color: white;
+  display: inline-block;
+  height: 50%;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 839px) {
+  .selectorContainer {
+    margin: 0 .25rem;
+  }
+}
+
 
 /* Table---------------------------------------------- */
 table {
-  border: 1px solid black;
   border-collapse: collapse;
 }
 
 table td {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9EA2A2;
 }
 
 th {
-  background-color: black;
+  background-color: #9EA2A2;
   color: white;
   padding: .25rem .5rem;
 }
 
 td {
-    padding: .25rem .5rem;
+    padding: .5rem .5rem;
 }
 
 td:last-child {

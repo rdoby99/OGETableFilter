@@ -8,6 +8,7 @@
 <body>
 
     <!-- Selectors -->
+    <div class="selectorsResetWrap">
     <div id='selectors'>
         <div class="selectorContainer">
         <label for="region">Region</label>
@@ -58,11 +59,22 @@
           <option value="1001">1000~</option>
         </select>
         </div>
+
+        <div class="selectorContainer">
+            <label for="college">College</label>
+            <select name="college" class="filters" id="collegeSelect">
+              <option value="any" selected>- Any -</option>
+              <option value="caes">College of Agricultural and Environmental Sciences</option>
+              <option value="coe">College of Engineering</option>
+            </select>
+            </div>
+    </div>
+    <button id="resetButton">Reset Filters</button>
     </div>
 
 
       <!-- Table -->
-    <div class="table-responsive">
+      <div class="table-responsive">
         <div class="table-responsive">
         <table class="table" style="width:100%;">
             <thead>
@@ -86,8 +98,8 @@
                     An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA at Oxford study abroad program in the StudyAway Portal.</td>
                     <td>Varies</td>
                     <td>Europe</td>
-                    <td>Learn more</td>
-                    <td>europe,merit,uga,both,varies</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13690" target="_blank">Learn more</a></td>
+                    <td>europe,merit,uga,both,varies,anyCol</td>
                 </tr>
                 <tr>
                     <td>UGA Foundation Incentive Scholarship for Study Abroad: UGA Cortona</td>
@@ -98,8 +110,8 @@
                     An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA Cortona study abroad program in the StudyAway Portal.</td>
                     <td>Varies</td>
                     <td>Europe</td>
-                    <td>Learn More</td>
-                    <td>europe,both,uga,both,varies</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13688" target="_blank">Learn More</a></td>
+                    <td>europe,both,uga,both,varies,anyCol</td>
                 </tr>
                 <tr>
                     <td>Office of Global Engagement General Scholarship</td>
@@ -107,8 +119,8 @@
                     <td>-</td>
                     <td>Up to $3,000</td>
                     <td>Global</td>
-                    <td>Learn more</td>
-                    <td>global,need,oge,both,3000</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=13189" target="_blank">Learn more</a></td>
+                    <td>global,both,oge,both,3000,anyCol</td>
                 </tr>
                 <tr>
                     <td>Asia-Georgia Internship Connection (Freeman Asia Grant)</td>
@@ -116,8 +128,8 @@
                     <td>Currently enrolled UGA undergraduate or graduate students are eligible. Internships/Volunteer opportunities MUST last for a minimum of 4 weeks and MUST earn academic credit for the internship. There is no maximum limit on internship/volunteer duration. Internships/volunteer program MUST be conducted in Southeast Asia. You MUST be a U.S. citizen or permanent resident.</td>
                     <td>Up to $5,000</td>
                     <td>Asia</td>
-                    <td>Learn more</td>
-                    <td>asia,both,oge,both,5000</td>
+                    <td>Learn More</td>
+                    <td>asia,both,oge,both,5000,anyCol</td>
                 </tr>
                 <tr>
                     <td>UGA at Oxford Endowed Scholarships Fund</td>
@@ -128,12 +140,43 @@
                     <td>Varies</td>
                     <td>Europe</td>
                     <td>Learn more</td>
-                    <td>europe,both,uga,both,varies</td>
+                    <td>europe,both,uga,both,varies,anyCol</td>
+                </tr>
+                <tr>
+                    <td>Brittney Fox Watts Study Abroad in Sustainability Scholarship</td>
+                    <td>For students going on a program focused on sustainability.&nbsp;These funds are provided through the generous support of family and friends of Brittney Fox Watts to the Brittney Fox Watts Memorial Fund.</td>
+                    <td>UGA undergraduate and graduate students attending a UGA-sponsored study abroad or exchange program focused on sustainability.&nbsp;</td>
+                    <td>Minimum $500</td>
+                    <td>Global</td>
+                    <td>Learn More</td>
+                    <td>global,both,uga,both,500,anyCol</td>
+                </tr>
+                <tr>
+                    <td>College of Agricultural and Environmental Sciences International Travel Scholarship</td>
+                    <td>&nbsp;</td>
+                    <td>For UGA students in CAES enrolled in CAES-sponsored study abroad, international internship or exchange programs.</td>
+                    <td>Up to $5,000</td>
+                    <td>Global</td>
+                    <td>Learn more</td>
+                    <td>global,both,uga,undergrad,5000,caes</td>
+                </tr>
+                <tr>
+                    <td>Experiential Learning Scholarship</td>
+                    <td>The Office of Experiential Learning is pleased to announce the availability of a limited number of&nbsp;scholarships&nbsp;to support experiential learning activities. Students must be&nbsp;eligible&nbsp;and activities must be on the&nbsp;approved list&nbsp;of any college to be considered for funding</td>
+                    <td>Open to undergraduate students, including transfer students, with at least one semester of UGA coursework who are pursuing experiential learning courses or non-credit activities aligned with the UGA Experiential Learning Requirement.&nbsp;<br />
+                    <br />
+                    Applicants&nbsp;must have a minimum GPA of 3.0.<br />
+                    <br />
+                    All applicants must have a recommendation letter submitted on their behalf, preferably written by a UGA faculty&nbsp;member who is familiar with your work.</td>
+                    <td>Varies</td>
+                    <td>Global</td>
+                    <td>Learn more</td>
+                    <td>global,both,uga,undergrad,varies,anyCol</td>
                 </tr>
             </tbody>
         </table>
         </div>
-    </div>
+        </div>
     <script src="script.js"></script>
 </body>
 
