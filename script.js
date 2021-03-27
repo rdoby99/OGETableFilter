@@ -1,6 +1,6 @@
 const selectorContainer = document.querySelector("#selectors");
-const trs = document.querySelectorAll("tr");
-const selectors = document.querySelectorAll("select")
+const trs = document.querySelectorAll("div.tableFilterWrap tr");
+const selectors = document.querySelectorAll("div.tableFilterWrap select")
 
 // Filters rows based on table filters
 selectorContainer.addEventListener('change', (e)=> {
@@ -22,7 +22,7 @@ selectorContainer.addEventListener('change', (e)=> {
         row.style.display = "none";
       }
 
-      if (row.dataset[1]!==need && need!=="any" && row.dataset[1]!=="both") {
+      if (row.dataset[1]!==need && need!=="any") {
         row.style.display = "none";
       }
 

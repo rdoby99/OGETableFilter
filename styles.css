@@ -10,12 +10,12 @@
     font-family: "Merriweather";
 } 
 
-label {
+.tableFilterWrap label {
     margin-bottom: .25rem;
     font-family: "Merriweather";
 }
 
-select {
+.tableFilterWrap select {
   display: inline-block;
 }
 
@@ -58,36 +58,42 @@ select {
 
 
 /* Table---------------------------------------------- */
-table {
+.tableFilterWrap table {
   border-collapse: collapse;
   /* font-family: Helvetica, sans-serif; */
   font-family: "Merriweather";
   font-size: 14px;
 }
 
-table td {
+.tableFilterWrap table td {
   border-bottom: 3px solid #9EA2A2;
 }
 
-th {
+.tableFilterWrap th {
   background-color: #9EA2A2;
   color: white;
-  padding: .25rem .5rem;
+  padding: .5rem .5rem;
   font-family: "Merriweather";
 }
 
-td {
+.tableFilterWrap td {
     padding: .5rem .5rem;
 }
 
-td:first-child {
+.tableFilterWrap td:first-child {
   font-weight: bold;
 }
 
-td:last-child {
+.tableFilterWrap td:last-child {
   display: none;
 }
 
-th:last-child {
+.tableFilterWrap th:last-child {
   display: none;
+}
+
+.tableFilterWrap a {
+  text-decoration: none;
+  color: #BA0C2F;
+  font-weight: bold;
 }

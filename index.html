@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="tableFilterWrap">
 
     <!-- Selectors -->
     <div class="selectorsResetWrap">
@@ -28,8 +29,9 @@
         <label for="need">Need/Merit</label>
         <select name="need" class="filters" id="needSelect">
           <option value="any" selected>- Any -</option>
-          <option value="need">Need</option>
-          <option value="merit">Merit</option>
+          <option value="both">Both</option>
+          <option value="need">Need Only</option>
+          <option value="merit">Merit Only</option>
         </select>
         </div>
 
@@ -59,22 +61,22 @@
             <select name="college" class="filters" id="collegeSelect">
               <option value="any" selected>- Any -</option>
               <option value="caes">College of Agricultural and Environmental Sciences</option>
-              <option value="coe">College of Engineering</option>
-              <option value="">College of Environment and Design</option>
-              <option value="">College of Family and Consumer Sciences</option>
-              <option value="">College of Pharmacy</option>
-              <option value="">College of Public Health</option>
-              <option value="">College of Veterinary Medicine</option>
-              <option value="">Franklin College of Arts and Sciences</option>
-              <option value="">Graduate School</option>
-              <option value="">Grady College of Journalism and Mass Communication</option>
-              <option value="">Mary Frances Early College of Education</option>
-              <option value="">Odum School of Ecology</option>
-              <option value="">School of Law</option>
-              <option value="">School of Public and International Affairs</option>
-              <option value="">School of Social Work</option>
-              <option value="">Terry College of Business</option>
-              <option value="">Warnell School of Forestry and Natural Resources</option>
+              <option value="engineering">College of Engineering</option>
+              <option value="design">College of Environment and Design</option>
+              <option value="facs">College of Family and Consumer Sciences</option>
+              <option value="pharm">College of Pharmacy</option>
+              <option value="ph">College of Public Health</option>
+              <option value="vetmed">College of Veterinary Medicine</option>
+              <option value="franklin">Franklin College of Arts and Sciences</option>
+              <option value="gradsch">Graduate School</option>
+              <option value="grady">Grady College of Journalism and Mass Communication</option>
+              <option value="edu">Mary Frances Early College of Education</option>
+              <option value="ecol">Odum School of Ecology</option>
+              <option value="law">School of Law</option>
+              <option value="spia">School of Public and International Affairs</option>
+              <option value="social">School of Social Work</option>
+              <option value="terry">Terry College of Business</option>
+              <option value="warnell">Warnell School of Forestry and Natural Resources</option>
             </select>
         </div>
         </div>
@@ -90,7 +92,7 @@
             <thead>
                 <tr>
                     <th scope="col">Title</th>
-                    <th scope="col">Eligibility</th>
+                    <th scope="col">Summary</th>
                     <th scope="col">Amount</th>
                     <th scope="col">Region</th>
                     <th scope="col">More Info</th>
@@ -100,28 +102,18 @@
             <tbody>
                 <tr>
                     <td>UGA Foundation Incentive Scholarship for Study Abroad: UGA at Oxford</td>
-                    <td>
-                    <ul>
-                        <li>Non-transient, degree-seeking major at the University of Georgia&nbsp;and&nbsp;completed at least one semester&nbsp;as an undergraduate or graduate student at UGA.</li>
-                        <li>Preference will be given to applicants with&nbsp;a&nbsp;2.5 cumulative grade point average or higher.</li>
-                        <li>An applicant&nbsp;must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.</li>
-                        <li>An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA at Oxford study abroad program in the StudyAway Portal.</li>
-                    </ul>
-                    </td>
+                    <td>For students pursuing the UGA Oxford program.</td>
                     <td>Varies</td>
                     <td>Europe</td>
-                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13690">Learn more</a></td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13690" target="_blank">Learn&nbsp;More</a></td>
                     <td>europe,merit,uga,both,anycol</td>
                 </tr>
                 <tr>
                     <td>UGA Foundation Incentive Scholarship for Study Abroad: UGA Cortona</td>
-                    <td>An applicant must be a&nbsp;non-transient, degree-seeking major at the University of Georgia&nbsp;and&nbsp;completed at least one semester&nbsp;as an undergraduate or graduate student at UGA prior to taking part in a study abroad program.<br />
-                    An applicant must be in good standing at the time of submission of this application as well as during any semester s/he is to receive scholarship funds. Preference will be given to applicants with&nbsp;a&nbsp;2.5 cumulative grade point average or higher.<br />
-                    An applicant&nbsp;must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.<br />
-                    An applicant must have a&nbsp;COMPLETED PROGRAM APPLICATION&nbsp;for an UGA Cortona study abroad program in the StudyAway Portal.</td>
+                    <td>For students pursuing the UGA Cortona program.</td>
                     <td>Varies</td>
                     <td>Europe</td>
-                    <td>Learn More</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13688" target="_blank">Learn&nbsp;More</a></td>
                     <td>europe,both,uga,both,anycol</td>
                 </tr>
                 <tr>
@@ -129,25 +121,23 @@
                     <td>The OGE will select study abroad and domestic field study scholarship recipients for a variety of scholarships, including the OGE Global Education Fellowship, OGE-Alumni Fellowship, Barstow Scholarship for Biological Sciences, Michael F. Adams and Mary E. Adams Study Abroad Scholarship, and more.</td>
                     <td>Up to $3,000</td>
                     <td>Global</td>
-                    <td>Learn more</td>
+                    <td><a href="http://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13189" target="_blank">Learn&nbsp;More</a></td>
                     <td>global,both,oge,both,anycol</td>
                 </tr>
                 <tr>
                     <td>Asia-Georgia Internship Connection (Freeman Asia Grant)</td>
-                    <td>Currently enrolled UGA undergraduate or graduate students are eligible. Internships/Volunteer opportunities MUST last for a minimum of 4 weeks and MUST earn academic credit for the internship. There is no maximum limit on internship/volunteer duration. Internships/volunteer program MUST be conducted in Southeast Asia. You MUST be a U.S. citizen or permanent resident.</td>
+                    <td>The Asia-Georgia Internship Connection scholarship is for currently enrolled UGA undergraduate or graduate students pursuing internships in Asia.</td>
                     <td>Up to $5,000</td>
                     <td>Asia</td>
-                    <td>Learn more</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=13192" target="_blank">Learn&nbsp;More</a></td>
                     <td>asia,both,oge,both,anycol</td>
                 </tr>
                 <tr>
                     <td>UGA at Oxford Endowed Scholarships Fund</td>
-                    <td>An applicant must be a non-transient, degree-seeking major at the University of Georgia and have completed at least one semester as an undergraduate or graduate student at UGA prior to taking part in a study abroad program.<br />
-                    An applicant must be in good standing at the time of submission of this application as well as during any semester s/he is to receive scholarship funds. Preference will be given to applicants with a 3.0 cumulative grade point average or higher.<br />
-                    An applicant must be enrolled for at least 10 credit hours during the semester of application, and an applicant is expected to take an appropriate full-course load (3 hours for a Fall/Spring break; 6-9 hours for summer; 12-15 hours for fall and spring) during the study abroad experience.</td>
+                    <td>For students pursuing the UGA Oxford program.</td>
                     <td>Varies</td>
                     <td>Europe</td>
-                    <td>Learn more</td>
+                    <td><a href="https://studyaway.uga.edu/index.cfm?FuseAction=Programs.ViewProgram&Program_ID=13491" target="_blank">Learn&nbsp;More</a></td>
                     <td>europe,both,uga,both,anycol</td>
                 </tr>
                 <tr>
@@ -155,7 +145,7 @@
                     <td>UGA undergraduate and graduate students attending a UGA-sponsored study abroad or exchange program focused on sustainability.&nbsp;</td>
                     <td>Minimum $500</td>
                     <td>Global</td>
-                    <td>Learn More</td>
+                    <td><a href="http://sustainability.uga.edu/smalldreams/" target="_blank">Learn&nbsp;More</a></td>
                     <td>global,both,uga,both,anycol</td>
                 </tr>
                 <tr>
@@ -163,7 +153,7 @@
                     <td>For UGA students pursuing Certificate in International Agriculture only.</td>
                     <td>Up to $1,000</td>
                     <td>Global</td>
-                    <td>Learn More</td>
+                    <td><a href="https://www.caes.uga.edu/students/scholarships/international-scholarships.html" target="_blank">Learn&nbsp;More</a></td>
                     <td>global,both,uga,both,anycol</td>
                 </tr>
                 <tr>
@@ -171,7 +161,7 @@
                     <td>For UGA students in CAES enrolled in CAES-sponsored study abroad, international internship or exchange programs.</td>
                     <td>Varies</td>
                     <td>Global</td>
-                    <td>Learn More</td>
+                    <td><a href="http://students.caes.uga.edu/undergraduate/scholarships/index.cfm" target="_blank">Learn&nbsp;More</a></td>
                     <td>global,both,uga,both,caes</td>
                 </tr>
                 <tr>
@@ -179,13 +169,14 @@
                     <td>This scholarship is to provide financial assistance to a rising junior or senior majoring in Biological Engineering.</td>
                     <td>Varies</td>
                     <td>Global</td>
-                    <td>Learn More</td>
-                    <td>global,both,uga,undergrad,coe</td>
+                    <td><a href="http://www.engineering.uga.edu/current/undergraduate/scholarships" target="_blank">Learn&nbsp;More</a></td>
+                    <td>global,both,uga,undergrad,engineering</td>
                 </tr>
             </tbody>
         </table>
         </div>
         </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
