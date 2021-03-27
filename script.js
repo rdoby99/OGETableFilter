@@ -9,7 +9,6 @@ selectorContainer.addEventListener('change', (e)=> {
     const need = document.querySelector("#needSelect").value;
     const funding = document.querySelector("#sourceSelect").value;
     const level = document.querySelector("#levelSelect").value;
-    const amount = document.querySelector("#amountSelect").value;
     const college = document.querySelector("#collegeSelect").value;
 
 
@@ -35,16 +34,12 @@ selectorContainer.addEventListener('change', (e)=> {
         row.style.display = "none";
       }
 
-      // Fix string amount
-      if (row.dataset[4]>amount && amount!=="any" && row.dataset[4]!=="varies" && amount!=="1001") {
+      if (row.dataset[4]!==college && college!=="any" && row.dataset[4]!=="anycol") {
         row.style.display = "none";
       }
+    }
+    }
 
-      if (row.dataset[5]!==college && college!=="any" && row.dataset[5]!=="anycol") {
-        row.style.display = "none";
-      }
-    }
-    }
 });
 
 // Reset Button
@@ -82,4 +77,5 @@ for (let row of trs) {
   }
 }
 
-dynamicTags();
+dynamicTags()
+
