@@ -84,6 +84,12 @@
   font-weight: bold;
 }
 
+.tableFilterWrap a {
+  text-decoration: none;
+  color: #BA0C2F;
+  font-weight: bold;
+}
+
 .tableFilterWrap td:last-child {
   display: none;
 }
@@ -92,8 +98,46 @@
   display: none;
 }
 
-.tableFilterWrap a {
-  text-decoration: none;
-  color: #BA0C2F;
-  font-weight: bold;
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+  thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+  .tableFilterWrap table td {
+    border-bottom: none;
+  }
+
+  .tableFilterWrap tr {
+    border-bottom: 3px solid #9EA2A2;
+  }
+
+  .selectorContainer {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .selectorContainerContainer {
+    display: block;
+    margin: 0;
+  }
+
+  #resetButton {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .selectorsResetWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #collegeSelect {
+    width: 100%
+  }
 }
