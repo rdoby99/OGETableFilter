@@ -111,6 +111,7 @@
 
   .tableFilterWrap table td {
     border-bottom: none;
+    white-space: normal !important;
   }
 
   .tableFilterWrap tr {
